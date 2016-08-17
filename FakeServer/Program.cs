@@ -24,6 +24,10 @@ namespace FakeServer
                 if (args.Length >= 1)
                 {
                     serverIpAddress = args[0];
+                } else
+                {
+                    Console.WriteLine("Enter the IP Address of your Dedicated Server: ");
+                    serverIpAddress = Console.ReadLine();
                 }
             }
             Console.WriteLine("Dedicated Server IP address set to " + serverIpAddress + ".\n");
